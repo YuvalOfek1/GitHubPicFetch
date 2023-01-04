@@ -5,16 +5,23 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>GitHub Profile Picture</h1>
-  <form id="form">
-    <label for="username">Enter a GitHub username:</label><br>
-    <input type="text" id="username" name="username"><br><br>
-    <input type="submit" value="Show Picture">
-  </form> 
-  <div class="popup">
-    <h1 id="greetings"></h1>
-    <img id="picture" src="">
-  </div>
+    <h1>GitHub Profile Picture</h1>
+    <form id="form">
+        <div class="form-group">
+            <label for="username">GitHub user finder:</label>
+            <input type="text" id="username" name="username" placeholder="Enter a GitHub username">
+            <input type="text" id="email" name="email" placeholder="Enter your Email">
+            <input type="submit" value="Show Picture">
+        </div>
+    </form> 
+    
+    <div class="popup">
+        <div class="popup-container">
+            <h1 id="greetings"></h1>
+            <img id="picture" src="">
+        </div>
+    
+    </div>
     <script src="index.js"></script>
 </body>
 </html>

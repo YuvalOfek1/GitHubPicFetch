@@ -1,6 +1,8 @@
 const form = document.getElementById('form');
 const popup = document.querySelector('.popup');
 const picture = document.getElementById('picture');
+const email = document.getElementById('email');
+
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -9,6 +11,11 @@ form.addEventListener('submit', e => {
     picture.src =`https://github.com/${username}.png`;
     const greeting = document.getElementById('greetings');
     greeting.innerHTML = `You are so beautiful, ${username}!`;
+    /*create an element after greeting of h1*/
+    const h1 = document.createElement('h1');
+    h1.innerHTML = `Email: ${email.value}`;
+    h1.classList.add('email');
+    greeting.appendChild(h1);
     popup.classList.add('show');
 });
 

@@ -18,6 +18,15 @@ form {
     margin: 0 auto;
     padding-top: 10px;
 }
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
 input[type="text"] {
     width: 100%;
     padding: 12px 20px;
@@ -56,12 +65,18 @@ input[type="submit"]:hover {
 .popup img {
     max-width: 25%;
     border-radius: 5px;
+    margin-top: auto;
     
 }
 .popup.show {
     visibility: visible;
 }
-.popup h1{
+.popup .email{
+    font-size: 20px;
+    color: black;
+    left:0;
+}
+.popup #greetings{
     /*print above the picture*/
  
     color: rgb(216, 115, 42);
@@ -69,3 +84,13 @@ input[type="submit"]:hover {
     margin: 10px;
 
 }
+
+.popup-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ccc;
+    height: 350px;
+    padding: 20px;
+}
+
