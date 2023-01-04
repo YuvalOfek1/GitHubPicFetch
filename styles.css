@@ -1,0 +1,71 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: lightgray;
+    height: 100vh;
+    width: 100vw;
+}
+h1 {
+    padding-top: 20px;
+    color: blue;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: lightblue;
+}
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.822);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    visibility: hidden;
+    flex-direction: column;
+}
+.popup img {
+    max-width: 25%;
+    border-radius: 5px;
+    
+}
+.popup.show {
+    visibility: visible;
+}
+.popup h1{
+    /*print above the picture*/
+ 
+    color: rgb(216, 115, 42);
+    font-size: 2rem;
+    margin: 10px;
+
+}
