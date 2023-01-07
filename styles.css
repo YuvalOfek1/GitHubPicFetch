@@ -54,7 +54,7 @@ input[type="submit"]:hover {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.822);
+    background-color: rgba(0, 0, 0, 0.651);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +63,7 @@ input[type="submit"]:hover {
     flex-direction: column;
 }
 .popup img {
-    max-width: 25%;
+    max-width: 50%;
     border-radius: 5px;
     margin-top: auto;
     
@@ -72,7 +72,7 @@ input[type="submit"]:hover {
     visibility: visible;
 }
 .popup .email{
-    font-size: 20px;
+    font-size: 14px;
     color: black;
     left:0;
 }
@@ -80,8 +80,8 @@ input[type="submit"]:hover {
     /*print above the picture*/
  
     color: rgb(216, 115, 42);
-    font-size: 2rem;
-    margin: 10px;
+    font-size: 1.1rem;
+    margin: 5px;
 
 }
 
@@ -92,5 +92,8 @@ input[type="submit"]:hover {
     background-color: #ccc;
     height: 350px;
     padding: 20px;
+    width: 20rem;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 0 rgba(249, 249, 249, 0.5);
 }
 
