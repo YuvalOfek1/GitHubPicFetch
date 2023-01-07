@@ -21,7 +21,7 @@ popup.addEventListener('click', e => {
 
 
 function createPopUp(){
-    return function data(username, email, picture){
+    return function data(){
         if(username.value === "" || email.value === "") {
             alert("Please fill out all fields");
             form.reset();
@@ -47,7 +47,7 @@ function createPopUp(){
 const popUpFunc = createPopUp();
 form.addEventListener('submit', e => {
     e.preventDefault();
-    popUpFunc(username, email, picture);
+    popUpFunc();
     
 });
 
